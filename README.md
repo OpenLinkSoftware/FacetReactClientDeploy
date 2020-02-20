@@ -3,7 +3,7 @@
 2020-Feb-20  
 CMSB
 
-A minimal Express web server for serving [FctReactClient](https://github.com/cblakeley/FacetReactClient).
+A minimal Express web server for serving [FactReactClient](https://github.com/cblakeley/FacetReactClient).
 
 ## Raison d'être
 FacetReactClient uses client-side routing in the form of React Router. Serving FacetReactClient from a static file server will usually fail. For example, if you used React Router with a route for /facet/, the webpack development server will respond to localhost:8000/facet/ properly, but an Express server serving a production build will not.
