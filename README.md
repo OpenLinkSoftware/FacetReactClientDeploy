@@ -6,7 +6,10 @@ CMSB
 A minimal Express web server for serving [FacetReactClient](https://github.com/cblakeley/FacetReactClient).
 
 ## Raison d'être
-FacetReactClient uses client-side routing in the form of React Router. Serving FacetReactClient from a static file server will usually fail. For example, if you used React Router with a route for /facet/, the webpack development server will respond to localhost:8000/facet/ properly, but an Express server serving a production build will not.
+
+The webpack development server typically expects the application to be served from a root path '/'. If the application is deployed from a static file server, for instance a Virtuoso WebDAV folder http://virtuoso-host/DAV/..., the root path is nolonger '/'. Consequently serving FacetReactClient from a static file server will usually fail.
+
+FacetReactClient uses client-side routing in the form of React Router. If the entry page is '/facet/index.html', requests for pages on a subpath, say '/facet/admin/' need to result in the client being served '/facet/index.html', as this page renders the notional subpath pages. The subpath pages don't exist. The routes in this minimal Express web server perform this rerouting to '/facet/index.html'
 
 ## Current Test Server
 
