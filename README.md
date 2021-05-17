@@ -3,7 +3,7 @@
 2020-Feb-20  
 CMSB
 
-A minimal Express web server for serving [FacetReactClient](https://github.com/cblakeley/FacetReactClient).
+A minimal Express web server for serving [FacetReactClient](https://github.com/OpenLinkSoftware/FacetReactClient).
 
 ## Raison d'être
 
@@ -26,4 +26,4 @@ The base path from which FacetReactClient is served is set in `FacetReactClient/
 
 ## See Also
 
-* [branch develop](https://github.com/cblakeley/FacetReactClientDeploy/tree/develop)
+* [branch develop](https://github.com/OpenLinkSoftware/FacetReactClientDeploy/tree/develop)
